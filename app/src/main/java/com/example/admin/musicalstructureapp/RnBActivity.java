@@ -1,7 +1,10 @@
 package com.example.admin.musicalstructureapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import java.util.ArrayList;
 
@@ -12,7 +15,7 @@ public class RnBActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rn_b);
 
-        ArrayList <RnB> rnBArrayList = new ArrayList <>();
+        final ArrayList <RnB> rnBArrayList = new ArrayList <>();
 
         rnBArrayList.add(new RnB("Made for Now", "Daddy Yankee & Janet"));
         rnBArrayList.add(new RnB("Summertime", "Childish Gambino"));
@@ -32,5 +35,17 @@ public class RnBActivity extends AppCompatActivity {
 
         ListView listView = findViewById(R.id.array_list_view);
         listView.setAdapter(rnbAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView <?> parent, View view, int position, long id) {
+                //Create an object of the class to get the musicians name and song title
+                RnB rnB = rnBArrayList.get(position);
+                Intent intent = new Intent(RnBActivity.this, SongPlayingActivity.class);
+                intent.putExtra("musicTitle", rnB.getMusician());
+                intent.putExtra("musician", rnB.getMusicTitle());
+
+                startActivity(intent);
+            }
+        });
     }
 }
