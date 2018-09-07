@@ -18,7 +18,7 @@ public class BongoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bongo);
 
         //Create an array List to store the songs
-        ArrayList <Bongo> bongoArrayList = new ArrayList <>();
+        final ArrayList <Bongo> bongoArrayList = new ArrayList <>();
         bongoArrayList.add(new Bongo("Kwa Ngwaru", "Diamond ft Harmonise"));
         bongoArrayList.add(new Bongo("Mwana", "Alikiba"));
         bongoArrayList.add(new Bongo("Salome", "Diamond ft Rayvanny"));
@@ -42,11 +42,10 @@ public class BongoActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView <?> parent, View view, int position, long id) {
                 //Create an object of the class to get the musicians name and song title
-                Bongo bongo = new Bongo("", "");
+                Bongo bongo = bongoArrayList.get(position);
                 Intent intent = new Intent(BongoActivity.this, SongPlayingActivity.class);
-                intent.putExtra("musicTitle", listView.getItemAtPosition(position).toString());
-                intent.putExtra("musician", listView.getItemAtPosition(position).toString());
-                intent.putExtra("musician", bongo.getMusician());
+                intent.putExtra("musicTitle", bongo.getMusician());
+                intent.putExtra("musician", bongo.getMusicTitle());
 
                 startActivity(intent);
             }
