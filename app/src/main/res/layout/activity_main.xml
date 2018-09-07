@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BackgroungColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bongo"
+        style="@style/MultiScreenStyle"
+        android:text="@string/bongo" />
+
+    <TextView
+        android:id="@+id/afro_pop"
+        style="@style/MultiScreenStyle"
+        android:text="@string/afropop" />
+
+    <TextView
+        android:id="@+id/rnb"
+        style="@style/MultiScreenStyle"
+        android:text="@string/rnb" />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">#7B1FA2</item>
+        <item name="colorPrimaryDark">#9C27B0</item>
+        <item name="colorAccent">#7C4DFF</item>
+    </style>
+    <!--Home screen Background Color-->
+    <style name="BackgroungColor" parent="TextAppearance.AppCompat">
+        <item name="android:background">#FF00FF</item>
+    </style>
+    <!-- The Home Screen Layout Styles-->
+    <style name="MultiScreenStyle">
+        <item name="android:textSize">45sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/text_view_border</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+
+</resources>
