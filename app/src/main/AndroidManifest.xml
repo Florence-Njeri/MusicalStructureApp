@@ -20,12 +20,12 @@
             android:name=".BongoActivity"
             android:label="Bongo" />
         <activity
-            android:name=".AfroPopActivity"
-            android:label="AfroPop" />
-        <activity
             android:name=".RnBActivity"
             android:label="RnB" />
-        <activity android:name=".SongPlayingActivity" android:label="Playing"></activity>
+        <activity
+            android:name=".SongPlayingActivity"
+            android:label="Playing" />
+        <activity android:name=".AfroPopActivity"></activity>
     </application>
 
 </manifest>

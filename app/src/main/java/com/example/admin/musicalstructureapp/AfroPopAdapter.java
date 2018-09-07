@@ -28,7 +28,6 @@ public class AfroPopAdapter extends ArrayAdapter <AfroPop> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_view, parent, false);
         }
 
-
         // Get the data object for this position in the List from <com.example.admin.musicalstructureapp.AfroPop.java>
 
         AfroPop currentSong = getItem(position);

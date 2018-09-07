@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
+    android:background="@drawable/playingscreen_gradient"
     android:orientation="vertical"
     tools:context=".SongPlayingActivity">
 
@@ -23,6 +23,8 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:padding="16dp"
+        android:textColor="#000"
+        android:textSize="20sp"
         tools:text="Musician's Name" />
 
     <TextView
@@ -31,6 +33,8 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:padding="16dp"
+        android:textColor="#000"
+        android:textSize="15sp"
         tools:text="Song Title" />
 
     <SeekBar
@@ -49,15 +53,18 @@
             android:paddingEnd="20dp"
             android:paddingRight="20dp"
             android:src="@drawable/previous_icon"
-            tools:ignore="RtlSymmetry" />
+            tools:ignore="RtlSymmetry"
+            android:contentDescription="@string/previous_icon" />
 
         <ImageView
+            android:id="@+id/play_icon"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:paddingEnd="20dp"
             android:paddingRight="20dp"
             android:src="@drawable/play_icon"
-            tools:ignore="RtlSymmetry" />
+            tools:ignore="RtlSymmetry"
+            android:contentDescription="@string/play_icon" />
 
         <ImageView
             android:layout_width="75dp"
@@ -65,7 +72,8 @@
             android:paddingEnd="20dp"
             android:paddingRight="20dp"
             android:src="@drawable/next_icon"
-            tools:ignore="RtlSymmetry" />
+            tools:ignore="RtlSymmetry"
+            android:contentDescription="@string/next_icon" />
     </LinearLayout>
 
 </LinearLayout>
