@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:padding="16dp"
-        android:textColor="#000"
+        android:textColor="#FFFFFF"
         android:textSize="15sp"
         tools:text="Song Title" />
 

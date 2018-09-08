@@ -1,10 +1,10 @@
 package com.example.admin.musicalstructureapp;
 
-public class RnB {
+public class Songs {
     private String musicTitle;
     private String musician;
 
-    public RnB(String musicTitle, String musician){
+    Songs(String musicTitle, String musician){
       this.musicTitle=musicTitle;
         this.musician=musician;
     }

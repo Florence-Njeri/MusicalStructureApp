@@ -2,16 +2,12 @@ package com.example.admin.musicalstructureapp;
 
 import android.content.Intent;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
-import java.util.Objects;
 
 public class SongPlayingActivity extends AppCompatActivity {
 
@@ -35,11 +31,11 @@ public class SongPlayingActivity extends AppCompatActivity {
                 musician.setText(musicTitle);
             }
 
-            final ImageView play=findViewById(R.id.play_icon);
+            final ImageView play = findViewById(R.id.play_icon);
             play.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                 play.setImageResource(R.drawable.pause_icon);
+                    play.setImageResource(R.drawable.pause_icon);
                 }
             });
         }
